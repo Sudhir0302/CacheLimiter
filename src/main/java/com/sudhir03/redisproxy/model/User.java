@@ -1,17 +1,24 @@
 package com.sudhir03.redisproxy.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 import java.io.Serializable;
 
+@Entity
+@Table(name="user")
 public class User implements Serializable
 {
-    private String id;
+    @Id
+    private Integer id;
     private String name;
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
