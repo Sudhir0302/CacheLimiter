@@ -27,7 +27,7 @@ public class RateLimitFilter extends OncePerRequestFilter {
         System.out.println(clientIP);
 
         if (!rateLimiterService.isAllowed(clientIP)) {
-            response.setStatus(HttpServletResponse.SC_REQUEST_TIMEOUT);
+            response.setStatus(429);
             response.getWriter().write("Too many requests. Please try again later.");
             return;
         }
