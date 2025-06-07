@@ -1,5 +1,9 @@
-A simple rest api which uses the benefits of redis.
-    ->Implements caching with help of spring cache dependency and redis
-    ->Implements rate limiter by storing client ip address in redis db and by limiting the no of req to 5 for a minute
+Redis Proxy:
+A simple Spring Boot REST API demonstrating the power of Redis with:
 
-![Redis Proxy Architecture](assets/architecture.png)
+🗃️ Caching using Spring Cache and Redis to reduce database load and improve performance.
+
+🚫 Rate Limiting by storing client IP addresses in Redis and restricting requests to 5 per minute.
+
+🧱 Architecture
+<p align="center"> <img src="assets/architecture.png" alt="Redis Proxy Architecture" width="500"/> </p>
