@@ -1,4 +1,4 @@
-Redis Proxy:
+Cache Limiter:
 A simple Spring Boot REST API demonstrating the power of Redis with:
 
 🗃️ Caching using Spring Cache and Redis to reduce database load and improve performance.
